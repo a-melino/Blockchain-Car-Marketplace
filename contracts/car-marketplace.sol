@@ -32,12 +32,12 @@ contract CarMarketplace is ERC721Full {
         uint256 mileage,
         bool accident,
         string memory carJson,
-        string memory tokenURI
+        string memory carURI
     ) public returns (uint256) {
 
         uint256 tokenId = totalSupply();
         _mint(ownerAddress, tokenId);
-        _setTokenURI(tokenId, tokenURI);
+        _setTokenURI(tokenId, carURI);
 
         carCollection[tokenId] = Car(brand, model, year, mileage, accident, carJson);
 

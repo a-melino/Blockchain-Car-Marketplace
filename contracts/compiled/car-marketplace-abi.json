@@ -388,7 +388,7 @@
 				"type": "string"
 			},
 			{
-				"name": "tokenURI",
+				"name": "carURI",
 				"type": "string"
 			}
 		],
@@ -431,6 +431,33 @@
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "tokenID",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "newAppraisalValue",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "reportURI",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "propertyJson",
+				"type": "string"
+			}
+		],
+		"name": "Appraisal",
+		"type": "event"
 	},
 	{
 		"anonymous": false,
