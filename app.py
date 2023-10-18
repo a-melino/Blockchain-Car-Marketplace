@@ -51,8 +51,9 @@ st.markdown("## Register New Car")
 car_name = st.text_input("Enter a name for this car.")
 car_brand = st.text_input("Enter the brand of the car.")
 car_model = st.text_input("Enter the model of the car.")
+car_mileage = st.text_input("Enter the mileage of the car (in miles).")
 car_year = st.text_input("Enter the car's model year.")
-car_accident = st.text_input("Has this car been in an accident?")
+car_accident = st.selectbox("Has this car been in an accident?", (True, False))
 file = st.file_uploader("Upload Car Image.", type=["jpg", "jpeg", "png"])
 
 if st.button("Register Car"):
@@ -60,14 +61,14 @@ if st.button("Register Car"):
     car_uri = f"ipfs://{car_ipfs_hash}"
 
     tx_hash = contract.functions.registerCar(
-        ownerAddress,
-        brand,       
-        model,           
-        int(year),       
-        int(mileage),
-        accident,       
-        tokenURI,   
-        carJson['image']
+        address,
+        car_brand,       
+        car_model,           
+        int(car_year),       
+        int(car_mileage),
+        bool(car_accident),   
+        carJson['image'],
+        car_uri
     ).transact({'from': address, 'gas': 1000000})
     
     receipt = w3.eth.waitForTransactionReceipt(tx_hash)
