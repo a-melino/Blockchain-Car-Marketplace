@@ -90,9 +90,9 @@ if st.sidebar.button("Fetch Cars"):
     st.sidebar.write(f"Cars associated with address {query_address}:")
     for token in car_tokens:
         token_uri = contract.functions.tokenURI(token).call()
-        st.write(f"Car ID: {token} - Cars: {car_uri}")
+        st.sidebar.write(f"Car ID: {token} - Cars: {car_uri}")
 
 
 # Fetch total number of cars/tokens
 total_cars = contract.functions.totalSupply().call()
-car_ids = list(range(total_cars)) 
+car_ids = list(range(total_cars))
