@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+pragma experimental ABIEncoderV2;
 pragma solidity ^0.5.5;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol";
@@ -11,14 +12,18 @@ contract CarMarketplace is ERC721Full {
         string brand;
         string model;
         uint256 year;
-        uint256 mileage;
-        bool accident;
+        uint256 kilometers;
+        string fuelType;
+        string engine;
+        string transmission;
+        uint256 accident;
+        uint256 cleanTitle;
+        uint256 price;
+        bool isForSale;
         string carJson;
     }
 
     mapping (uint256 => Car) public carCollection;
-
-    event Appraisal(uint256 tokenID, uint newAppraisalValue, string reportURI, string propertyJson);
 
     function getCarDetails(uint256 tokenId) public view returns (string memory detailsJson) {
         return carCollection[tokenId].carJson;
@@ -26,12 +31,7 @@ contract CarMarketplace is ERC721Full {
 
     function registerCar(
         address ownerAddress, 
-        string memory brand,
-        string memory model,
-        uint256 year,
-        uint256 mileage,
-        bool accident,
-        string memory carJson,
+        Car memory car,
         string memory carURI
     ) public returns (uint256) {
 
@@ -39,7 +39,7 @@ contract CarMarketplace is ERC721Full {
         _mint(ownerAddress, tokenId);
         _setTokenURI(tokenId, carURI);
 
-        carCollection[tokenId] = Car(brand, model, year, mileage, accident, carJson);
+        carCollection[tokenId] = car;
 
         return tokenId;
     }
