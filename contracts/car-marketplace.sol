@@ -25,11 +25,14 @@ contract CarMarketplace is ERC721Full {
 
     mapping (uint256 => Car) public carCollection;
 
+<<<<<<< HEAD
     event CarListedForSale(uint256 indexed tokenId, uint256 price, address indexed seller);
 
     event CarSold(uint256 indexed tokenId, address indexed seller, address indexed buyer, uint256 price);
 
 
+=======
+>>>>>>> main
     function getCarDetails(uint256 tokenId) public view returns (string memory detailsJson) {
         return carCollection[tokenId].carJson;
     }
