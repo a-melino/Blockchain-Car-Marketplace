@@ -21,6 +21,7 @@
 		"constant": false,
 		"inputs": [
 			{
+<<<<<<< HEAD
 				"name": "ownerAddress",
 				"type": "address"
 			},
@@ -87,6 +88,111 @@
 		"outputs": [
 			{
 				"name": "",
+=======
+				"name": "tokenId",
+>>>>>>> main
+				"type": "uint256"
+			},
+			{
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+<<<<<<< HEAD
+=======
+		"name": "listCarForSale",
+		"outputs": [],
+>>>>>>> main
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+<<<<<<< HEAD
+=======
+		"constant": false,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "purchaseCar",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ownerAddress",
+				"type": "address"
+			},
+			{
+				"components": [
+					{
+						"name": "brand",
+						"type": "string"
+					},
+					{
+						"name": "model",
+						"type": "string"
+					},
+					{
+						"name": "year",
+						"type": "uint256"
+					},
+					{
+						"name": "kilometers",
+						"type": "uint256"
+					},
+					{
+						"name": "fuelType",
+						"type": "string"
+					},
+					{
+						"name": "engine",
+						"type": "string"
+					},
+					{
+						"name": "transmission",
+						"type": "string"
+					},
+					{
+						"name": "accident",
+						"type": "uint256"
+					},
+					{
+						"name": "cleanTitle",
+						"type": "uint256"
+					},
+					{
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"name": "isForSale",
+						"type": "bool"
+					},
+					{
+						"name": "carJson",
+						"type": "string"
+					}
+				],
+				"name": "car",
+				"type": "tuple"
+			},
+			{
+				"name": "carURI",
+				"type": "string"
+			}
+		],
+		"name": "registerCar",
+		"outputs": [
+			{
+				"name": "",
 				"type": "uint256"
 			}
 		],
@@ -95,6 +201,7 @@
 		"type": "function"
 	},
 	{
+>>>>>>> main
 		"constant": false,
 		"inputs": [
 			{
@@ -192,6 +299,58 @@
 		"anonymous": false,
 		"inputs": [
 			{
+<<<<<<< HEAD
+=======
+				"indexed": true,
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"name": "seller",
+				"type": "address"
+			}
+		],
+		"name": "CarListedForSale",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"name": "seller",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "buyer",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "CarSold",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+>>>>>>> main
 				"indexed": true,
 				"name": "from",
 				"type": "address"
