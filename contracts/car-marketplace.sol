@@ -31,7 +31,7 @@ contract CarMarketplace is ERC721Full {
 
     function registerCar(
         address ownerAddress, 
-        Car memory car,
+        Car memory newCar,
         string memory carURI
     ) public returns (uint256) {
 
@@ -39,7 +39,7 @@ contract CarMarketplace is ERC721Full {
         _mint(ownerAddress, tokenId);
         _setTokenURI(tokenId, carURI);
 
-        carCollection[tokenId] = car;
+        carCollection[tokenId] = newCar;
 
         return tokenId;
     }
