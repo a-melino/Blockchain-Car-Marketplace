@@ -155,17 +155,35 @@ car_price = st.number_input("Enter the price you wish to list the car for.(in ET
 file = st.file_uploader("Upload Car Image.", type=["jpg", "jpeg", "png"])
 
 if st.button("Register Car"):
-    car_ipfs_hash, carJson = pin_car_data(car_name, file)
+    car_ipfs_hash, carJson = pin_car_data(f"{car_year} {car_brand} {car_model}", file)
     car_uri = f"ipfs://{car_ipfs_hash}"
+
+    if car_accident == "Yes":
+        car_accident_value = 1
+    else:
+        car_accident_value = 0
+
+    if car_clean_title == "Yes":
+        car_clean_title_value = 1
+    else:
+        car_clean_title_value = 0
 
     tx_hash = contract.functions.registerCar(
         address,
-        car_brand,       
-        car_model,           
-        int(car_year),       
-        int(car_mileage),
-        bool(car_accident),   
-        carJson['image'],
+        (
+            car_brand,
+            car_model,
+            car_year,
+            int(car_mileage),
+            car_fuel_type,
+            car_engine,
+            car_transmission,
+            car_accident_value,
+            car_clean_title_value,
+            int(car_price),
+            True,
+            carJson['image'],
+        ),   
         car_uri
     ).transact({'from': address, 'gas': 1000000})
     

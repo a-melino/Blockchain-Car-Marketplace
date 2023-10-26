@@ -21,7 +21,76 @@
 		"constant": false,
 		"inputs": [
 			{
+<<<<<<< HEAD
+				"name": "ownerAddress",
+				"type": "address"
+			},
+			{
+				"components": [
+					{
+						"name": "brand",
+						"type": "string"
+					},
+					{
+						"name": "model",
+						"type": "string"
+					},
+					{
+						"name": "year",
+						"type": "uint256"
+					},
+					{
+						"name": "kilometers",
+						"type": "uint256"
+					},
+					{
+						"name": "fuelType",
+						"type": "string"
+					},
+					{
+						"name": "engine",
+						"type": "string"
+					},
+					{
+						"name": "transmission",
+						"type": "string"
+					},
+					{
+						"name": "accident",
+						"type": "uint256"
+					},
+					{
+						"name": "cleanTitle",
+						"type": "uint256"
+					},
+					{
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"name": "isForSale",
+						"type": "bool"
+					},
+					{
+						"name": "carJson",
+						"type": "string"
+					}
+				],
+				"name": "newCar",
+				"type": "tuple"
+			},
+			{
+				"name": "carURI",
+				"type": "string"
+			}
+		],
+		"name": "registerCar",
+		"outputs": [
+			{
+				"name": "",
+=======
 				"name": "tokenId",
+>>>>>>> main
 				"type": "uint256"
 			},
 			{
@@ -29,13 +98,18 @@
 				"type": "uint256"
 			}
 		],
+<<<<<<< HEAD
+=======
 		"name": "listCarForSale",
 		"outputs": [],
+>>>>>>> main
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+<<<<<<< HEAD
+=======
 		"constant": false,
 		"inputs": [
 			{
@@ -127,6 +201,7 @@
 		"type": "function"
 	},
 	{
+>>>>>>> main
 		"constant": false,
 		"inputs": [
 			{
@@ -224,6 +299,8 @@
 		"anonymous": false,
 		"inputs": [
 			{
+<<<<<<< HEAD
+=======
 				"indexed": true,
 				"name": "tokenId",
 				"type": "uint256"
@@ -273,6 +350,7 @@
 		"anonymous": false,
 		"inputs": [
 			{
+>>>>>>> main
 				"indexed": true,
 				"name": "from",
 				"type": "address"
