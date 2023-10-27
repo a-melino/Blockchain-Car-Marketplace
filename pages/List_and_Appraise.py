@@ -117,7 +117,7 @@ transmission_type = ['–', 'Automatic', 'Manual','CVT', 'DCT']
 car_transmission_type = st.selectbox("Select the transmission type of the car.", options=transmission_type)
 
 # Get transmission string to tokenize
-car_transmission = f"{transmission_gears}-Speed {transmission_type}"
+car_transmission = f"{car_transmission_gears}-Speed {car_transmission_type}"
 
 car_accident = st.selectbox("Has this car been in an accident?", ("No", "Yes"))
 
