@@ -39,17 +39,17 @@ def pin_car_data(name, file):
 
 
 # Main Streamlit UI
-st.title("Query Cars by Address")
+st.title("Query Cars")
 
-query_address = st.text_input("Enter Ethereum address to fetch associated Cars")
+query_address = os.getenv("SMART_CONTRACT_ADDRESS");
 
 if st.button("Fetch Cars"):
     token_count = contract.functions.balanceOf(query_address).call()
     car_tokens = [contract.functions.tokenOfOwnerByIndex(query_address, i).call() for i in range(token_count)]
-    st.write(f"Cars associated with address {query_address}:")
+    st.write(f"Cars associated with smart contract address {query_address}:")
     for token in car_tokens:
         token_uri = contract.functions.tokenURI(token).call()
-        st.write(f"Car ID: {token} - Cars: {car_uri}")
+        st.write(f"Car ID: {token} - Cars: ")
 
 
 # Fetch total number of cars/tokens
