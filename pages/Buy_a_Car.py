@@ -8,6 +8,7 @@ from pinata import pin_file_to_ipfs, pin_json_to_ipfs, convert_data_to_json
 import requests
 import json
 from prediction import predict_price
+from wallet import get_balance
 
 # Load environment variables
 load_dotenv()
@@ -26,13 +27,31 @@ contract = load_contract()
 
 # User Interface
 st.title("Buy a Car")
-car_id = st.text_input("Enter the Car ID (Token ID)")
-sale_price = st.text_input("Enter the Sale Price (in Ether)")
-buyer_address = st.text_input("Enter the Buyer's Address")
+st.write("Choose an account to get started")
+accounts = w3.eth.accounts
+address = st.selectbox("Select Account", options=accounts)
+st.write(f"Account Balance: {get_balance(w3, address)} ETH")
+          
+# Retrieve and display the list of cars available for sale 
+def get_cars_for_sale():
+    car_ids = []
+    total_cars = contract.functions.totalSupply().call()
+    
+    for car_id in range(total_cars):
+        if contract.functions.carCollection(car_id).call()[-2]:
+            car_ids.append(car_id)
+            
+    return car_ids
+
+cars_for_sale = get_cars_for_sale()
+
+car_id = st.selectbox("Select Car ID to Purchase(Token ID)", options=cars_for_sale)
 
 if st.button("Buy Car"):
-    # Call the listCarForSale function in your smart contract
-    tx_hash = contract.functions.listCarForSale(car_id, sale_price).transact({'from': your_address})
+    car_price = contract.functions.carCollection(car_id).call()[-3]
+
+    # Call the purchaseCar function in your smart contract
+    tx_hash = contract.functions.purchaseCar(car_id).transact({'from': address, 'gas': 1000000, "value": w3.toWei(car_price, "ether")})
     
     # Wait for the transaction to be mined
     receipt = w3.eth.waitForTransactionReceipt(tx_hash)
@@ -42,16 +61,3 @@ if st.button("Buy Car"):
         st.write("Car purchsed successfully.")
     else:
         st.write("Failed to purchase the car.")
-          
-# Retrieve and display the list of cars available for sale 
-def get_cars_for_sale():
-    car_ids = []
-    total_cars = contract.functions.totalSupply().call()
-    
-    for car_id in range(total_cars):
-        if contract.functions.carCollection(car_id).call()["isForSale"]:
-            car_ids.append(car_id)
-            
-    return car_ids
-
-cars_for_sale = get_cars_for_sale()
