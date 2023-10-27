@@ -43,14 +43,15 @@ st.title("Query Cars")
 
 query_address = os.getenv("SMART_CONTRACT_ADDRESS");
 
-if st.button("Fetch Cars"):
-    token_count = contract.functions.balanceOf(query_address).call()
-    car_tokens = [contract.functions.tokenOfOwnerByIndex(query_address, i).call() for i in range(token_count)]
-    st.write(f"Cars associated with smart contract address {query_address}:")
-    for token in car_tokens:
-        token_uri = contract.functions.tokenURI(token).call()
-        st.write(f"Car ID: {token} - Cars: ")
+token_count = contract.functions.totalSupply().call()
+st.write(f"token_count: {token_count}")
 
+tokenId = st.selectbox("Select a Token ID:", range(token_count))
+
+if st.button("Fetch Car"):
+    st.write(f"{tokenId}")
+
+    
 
 # Fetch total number of cars/tokens
 total_cars = contract.functions.totalSupply().call()
