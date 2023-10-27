@@ -56,7 +56,6 @@ def get_ethusd():
 
 ethusd_rate = get_ethusd()
 
-
 # Main Streamlit UI
 st.title("Car Marketplace")
 st.write("Choose an account to get started")
@@ -124,6 +123,8 @@ car_accident = st.selectbox("Has this car been in an accident?", ("No", "Yes"))
 
 car_clean_title = st.selectbox("Does this car have a clean title? (i.e. Has this car never been deemed a total loss?)", ("No", "Yes"))
 
+file = st.file_uploader("Upload Car Image.", type=["jpg", "jpeg", "png"])
+
 # Get a price recomendation based on the provided information
 if st.button("Get Car Listing Price Recomendation"):
     car_data = {
@@ -151,8 +152,6 @@ else:
     price_prediction_eth = 0.0
 
 car_price = st.number_input("Enter the price you wish to list the car for.(in ETH)", min_value=0.0, value=price_prediction_eth)
-
-file = st.file_uploader("Upload Car Image.", type=["jpg", "jpeg", "png"])
 
 if st.button("Register Car"):
     car_ipfs_hash, carJson = pin_car_data(f"{car_year} {car_brand} {car_model}", file)
