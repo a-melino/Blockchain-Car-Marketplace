@@ -1,0 +1,101 @@
+brand,model,model_year,fuel_type,accident,clean_title,price,kilometers,engine_cylinders,engine_hp,electric,engine_displacement_size,transmission_gears,transmission_type
+Kia,Telluride SX,2020,Gasoline,0,0,36500.0,89158,6,291.0,0,3.8,8,Automatic
+Ford,Mustang GT,2010,Gasoline,1,1,14900.0,140818,8,315.0,0,4.6,-,Automatic
+Ford,F-250 Lariat,2017,E85 Flex Fuel,0,0,45985.0,116079,8,0.0,0,6.2,6,Automatic
+Lexus,LX 600 Premium,2023,Gasoline,0,0,119500.0,2414,6,409.0,0,3.4,10,Automatic
+BMW,228 Gran Coupe i xDrive,2020,Gasoline,0,0,30798.0,16779,-,0.0,0,2.0,-,Automatic
+Ford,Mustang GT,2011,Gasoline,0,1,23500.0,214854,8,412.0,0,5.0,6,Manual
+INFINITI,QX60 Luxe,2020,Gasoline,0,1,32100.0,61799,6,295.0,0,3.5,-,Automatic
+Ford,F-150 SVT Raptor,2014,Gasoline,1,1,42500.0,144822,8,411.0,0,6.2,-,Automatic
+Mercedes-Benz,C-Class C 300 4MATIC Sport,2015,Gasoline,0,1,19000.0,118287,4,241.0,0,2.0,7,Automatic
+Nissan,Leaf SV PLUS,2023,-,1,1,29895.0,11409,-,214.0,1,0.0,1,Automatic
+BMW,535 i xDrive,2015,Gasoline,1,1,20950.0,94411,6,300.0,0,3.0,8,Automatic
+Mercedes-Benz,SL-Class SL 550,2013,Gasoline,1,1,36000.0,185075,8,429.0,0,4.6,-,DCT
+Jeep,Wrangler Unlimited Sport,2019,Gasoline,0,1,39799.0,84933,6,285.0,0,3.6,8,Automatic
+Audi,S5 3.0T Prestige,2022,Gasoline,0,0,61900.0,23720,-,0.0,0,3.0,1,Automatic
+Chevrolet,Corvette Stingray w/2LT,2022,Gasoline,0,1,92500.0,12714,8,490.0,0,6.2,8,Automatic
+Kia,Forte LX,2018,Gasoline,0,0,14699.0,76389,4,0.0,0,2.0,-,Automatic
+MINI,Countryman Cooper S ALL4,2014,Gasoline,0,1,17000.0,127138,4,181.0,0,1.6,-,DCT
+Lexus,NX 200t Base,2015,Gasoline,1,1,17900.0,199961,4,235.0,0,2.0,-,Automatic
+Tesla,Model 3 Long Range,2018,-,0,1,25900.0,99297,-,271.0,1,0.0,-,Automatic
+Hyundai,Genesis Coupe 3.8 R-Spec,2014,Gasoline,1,1,15000.0,83782,6,348.0,0,3.8,6,Manual
+Honda,Pilot EX-L,2020,Gasoline,0,1,34999.0,70811,6,280.0,0,3.5,-,Automatic
+BMW,X5 xDrive35i,2017,Gasoline,1,1,23300.0,169142,6,300.0,0,3.0,8,Automatic
+Chevrolet,Camaro 2SS,2016,Gasoline,0,1,32000.0,119091,8,455.0,0,6.2,8,Automatic
+Porsche,718 Cayman GT4,2021,Gasoline,0,0,136900.0,3380,6,414.0,0,4.0,6,Manual
+Dodge,Magnum R/T,2005,Gasoline,1,1,12000.0,154497,8,340.0,0,5.7,5,Automatic
+Kia,Sorento S,2021,Gasoline,0,0,33591.0,31551,4,0.0,0,2.5,8,Automatic
+BMW,840 i xDrive,2024,Gasoline,0,1,90000.0,2414,6,335.0,0,3.0,-,Automatic
+Mercedes-Benz,CLS-Class CLS 550,2007,Gasoline,1,1,104999.0,198130,8,382.0,0,5.5,-,Automatic
+Cadillac,ATS 2.5L,2014,Gasoline,1,1,15000.0,129391,4,202.0,0,2.5,-,Automatic
+Toyota,4Runner Limited,2021,Gasoline,0,0,43837.0,41653,6,0.0,0,4.0,-,Automatic
+BMW,X1 xDrive28i,2020,Gasoline,0,1,29000.0,45044,4,228.0,0,2.0,-,Automatic
+Dodge,Dakota SLT,2003,Gasoline,1,1,5700.0,228205,8,230.0,0,4.7,-,Automatic
+Audi,A5 2.0T Premium,2018,Gasoline,1,1,28000.0,85295,4,252.0,0,2.0,-,Automatic
+Mercedes-Benz,GL-Class GL 450 4MATIC,2013,Gasoline,1,1,15900.0,150474,8,362.0,0,4.6,-,Automatic
+Ford,Taurus SHO,2014,Gasoline,1,1,15500.0,222757,6,365.0,0,3.5,-,Automatic
+BMW,328 i,1997,Gasoline,1,1,15900.0,331525,6,190.0,0,2.8,5,Manual
+Porsche,911 Turbo,2018,Gasoline,1,1,147500.0,45818,6,540.0,0,3.8,-,DCT
+BMW,X7 xDrive40i,2023,Hybrid,0,1,85495.0,23110,6,375.0,0,3.0,8,Automatic
+Bentley,Continental GT Base,2009,Gasoline,0,1,48500.0,69202,12,552.0,0,6.0,-,Automatic
+GMC,Sierra 2500 AT4,2020,Diesel,0,1,69500.0,84769,8,445.0,0,6.6,6,Automatic
+Porsche,911 Turbo,2018,Gasoline,0,1,169000.0,19454,6,540.0,0,3.8,-,Automatic
+Lamborghini,Urus Base,2021,Gasoline,0,0,229900.0,32298,8,0.0,0,4.0,8,Automatic
+Acura,ILX Premium & A-SPEC Packages,2019,Gasoline,0,1,25000.0,31382,4,201.0,0,2.4,8,Automatic
+BMW,330 i xDrive,2018,Gasoline,0,1,17000.0,188293,4,248.0,0,2.0,8,Automatic
+Kia,Telluride S,2023,Gasoline,0,1,39900.0,23657,6,291.0,0,3.8,8,Automatic
+Ford,F-250 XLT,2019,Diesel,0,1,54500.0,62121,8,450.0,0,6.7,6,Automatic
+Ford,C-Max Energi SE,2017,Plug-In Hybrid,1,1,11499.0,108602,4,188.0,0,2.0,-,CVT
+RAM,1500 Big Horn,2021,Hybrid,0,1,42000.0,38624,8,395.0,0,5.7,-,Automatic
+Mazda,RX-8 Sport,2008,Gasoline,1,1,6800.0,250253,-,212.0,0,1.3,-,Automatic
+Mercedes-Benz,C-Class C300 4MATIC,2022,Gasoline,0,0,44798.0,21206,-,0.0,0,2.0,-,Automatic
+Toyota,Tundra SR5,2015,Gasoline,0,1,27000.0,159325,8,310.0,0,4.6,6,Automatic
+Mercedes-Benz,SL-Class SL63 AMG Roadster,2009,Gasoline,0,1,44850.0,90123,8,518.0,0,6.3,-,Automatic
+Lexus,LC 500 Base,2020,Gasoline,0,0,75950.0,60944,8,0.0,0,5.0,10,Automatic
+Honda,Prelude Type SH,2001,Gasoline,0,1,18000.0,201168,4,200.0,0,2.2,5,Manual
+Audi,Q7 3.0T Premium Plus,2014,Gasoline,1,1,15495.0,154936,6,280.0,0,3.0,8,Automatic
+Chevrolet,Silverado 1500 Limited Custom,2022,Gasoline,0,0,37698.0,49013,-,0.0,0,2.7,-,Automatic
+Tesla,Model 3 Long Range,2018,-,0,1,28895.0,58237,-,271.0,1,0.0,1,Automatic
+Toyota,C-HR LE,2020,Gasoline,1,1,27671.0,22635,4,0.0,0,2.0,-,CVT
+Chrysler,Crossfire Limited,2005,Gasoline,1,1,6000.0,187199,6,215.0,0,3.2,5,Automatic
+Audi,A4 2.0T Premium Plus,2015,E85 Flex Fuel,1,1,16000.0,134251,4,220.0,0,2.0,8,Automatic
+Land,Rover Range Rover 3.0L V6 Supercharged HSE,2019,Gasoline,0,1,62425.0,79193,6,380.0,0,3.0,-,DCT
+BMW,X2 xDrive28i,2022,Gasoline,0,1,29999.0,53108,4,228.0,0,2.0,-,DCT
+Subaru,WRX Base,2017,Gasoline,0,1,23750.0,98057,4,268.0,0,2.0,6,Manual
+Porsche,Cayenne Base,2018,Gasoline,0,1,45855.0,113386,6,300.0,0,3.6,8,Automatic
+BMW,Z4 3.0i Roadster,2006,Gasoline,1,1,11500.0,74847,6,215.0,0,3.0,-,DCT
+Audi,Q5 3.0 TDI Premium Plus,2014,Diesel,1,1,22500.0,89422,6,240.0,0,3.0,8,Automatic
+Nissan,Armada LE,2009,Gasoline,0,1,20000.0,140222,8,317.0,0,5.6,-,Automatic
+RAM,1500 Rebel,2020,Hybrid,1,1,41900.0,102797,8,395.0,0,5.7,8,Automatic
+Acura,MDX Sport,2007,Gasoline,1,1,7700.0,295242,6,300.0,0,3.7,5,Automatic
+BMW,X7 xDrive40i,2019,Gasoline,0,0,53998.0,56726,-,0.0,0,3.0,-,Automatic
+Toyota,4Runner Trail,2011,Gasoline,0,1,23500.0,252667,6,270.0,0,4.0,-,DCT
+Alfa,Romeo Giulia Ti,2020,Gasoline,0,0,34645.0,37560,4,0.0,0,2.0,8,Automatic
+Toyota,Tundra SR5,2021,Gasoline,0,1,44750.0,53841,8,381.0,0,5.7,6,Automatic
+GMC,Acadia Denali,2015,Gasoline,0,1,19780.0,120482,6,288.0,0,3.6,-,Automatic
+Toyota,FJ Cruiser Base,2007,Gasoline,1,1,17900.0,288073,6,239.0,0,4.0,-,Automatic
+Chevrolet,Camaro 1LT,2017,Gasoline,0,1,19800.0,119091,4,275.0,0,2.0,-,Automatic
+Maserati,Quattroporte Sport GT,2007,Gasoline,1,1,7999.0,131966,8,394.0,0,4.2,-,DCT
+GMC,Yukon Denali,2021,Gasoline,1,1,74500.0,48316,8,420.0,0,6.2,-,Automatic
+Porsche,Macan S,2015,Gasoline,0,1,23999.0,129230,6,340.0,0,3.0,7,Automatic
+Lexus,ES 300h Base,2018,Hybrid,1,1,23400.0,162331,4,200.0,0,2.5,-,CVT
+BMW,X5 3.0i,2004,Gasoline,0,1,6730.0,225308,6,225.0,0,3.0,-,DCT
+Alfa,Romeo Giulia Base,2017,Gasoline,0,1,21000.0,57936,4,280.0,0,2.0,8,Automatic
+Toyota,4Runner Venture Special Edition,2021,Gasoline,0,0,44775.0,45974,6,0.0,0,4.0,-,Automatic
+Aston,Martin V8 Vantage Base,2008,Gasoline,1,1,33995.0,100388,8,380.0,0,4.3,-,Manual
+Hyundai,Veloster Base,2013,Gasoline,0,1,9800.0,1287,4,132.0,0,1.6,-,DCT
+Volkswagen,Passat 2.5 SE,2012,Gasoline,1,1,9750.0,257286,5,170.0,0,2.5,-,Automatic
+Chevrolet,Corvette Base,2008,Gasoline,0,1,31000.0,128748,8,430.0,0,6.2,6,Automatic
+Chevrolet,Tahoe LT,2018,Gasoline,0,1,36000.0,120701,8,355.0,0,5.3,6,Automatic
+Lexus,RX 330 Base,2004,Gasoline,0,1,7900.0,244453,6,230.0,0,3.3,-,Automatic
+Volvo,XC90 T6 Inscription,2019,Gasoline,0,1,37000.0,96561,4,316.0,0,2.0,8,Automatic
+Chevrolet,Corvette Stingray w/3LT,2020,Gasoline,0,0,87500.0,8359,8,0.0,0,6.2,8,Automatic
+Tesla,Model 3 Long Range,2018,-,0,1,31500.0,39204,-,271.0,1,0.0,-,Automatic
+Ford,Expedition King Ranch,2020,Gasoline,1,1,48999.0,94468,6,375.0,0,3.5,10,Automatic
+Dodge,Ram 1500 Quad Cab,2002,Gasoline,1,1,6500.0,288073,8,245.0,0,5.9,-,Automatic
+GMC,Acadia SLE,2020,Gasoline,0,1,27700.0,93342,6,310.0,0,3.6,9,Automatic
+GMC,Yukon Denali,2018,Gasoline,0,1,44500.0,122310,8,420.0,0,6.2,-,Automatic
+Lexus,GX 470 Base,2005,Gasoline,1,1,13450.0,183465,8,270.0,0,4.7,-,Automatic
+RAM,2500 Tradesman,2021,Gasoline,1,1,48000.0,55305,8,410.0,0,6.4,8,Automatic
+Tesla,Model X P90D,2016,-,0,1,39500.0,146450,-,691.0,1,0.0,-,Automatic
+Volkswagen,Arteon SEL R-Line,2022,Gasoline,0,0,38698.0,30022,-,0.0,0,2.0,-,Automatic
