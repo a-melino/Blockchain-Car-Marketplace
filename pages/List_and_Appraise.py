@@ -9,7 +9,6 @@ import requests
 import json
 from prediction import predict_price
 
-
 # Load environment variables
 load_dotenv()
 
@@ -90,16 +89,16 @@ car_mileage = st.number_input("Enter the mileage of the car (in kilometers).", m
 car_electric = st.selectbox("Is the car fully electric?", ("No", "Yes"))
 
 if car_electric == "No":
-    fuel_types = ['–', 'E85 Flex Fuel', 'Gasoline', 'Hybrid', 'Diesel', 'Plug-In Hybrid']
+    fuel_types = ['-', 'E85 Flex Fuel', 'Gasoline', 'Hybrid', 'Diesel', 'Plug-In Hybrid']
     car_fuel_type = st.selectbox("Select the fuel type of the car.", options=fuel_types)
 
-    engine_cylinders = ['–', '3', '4', '5', '6', '8', '10', '12', '16']
+    engine_cylinders = ['-', '3', '4', '5', '6', '8', '10', '12', '16']
     car_engine_cylinders = st.selectbox("Select the number of cylinders in the car's engine. (ex. A v6 engine has 6 cylinders)", options=engine_cylinders)
 
     car_engine_displacement = st.number_input("Enter the displacement size of the engine(in liters)", min_value=0.0, max_value=10.0)
 else:
-    car_fuel_type = '–'
-    car_engine_cylinders = '–'
+    car_fuel_type = '-'
+    car_engine_cylinders = '-'
     car_engine_displacement = 0.0
     
 car_engine_hp = st.number_input("Enter the number of HP(Horsepower) the car produces.", min_value=0.0)
@@ -110,10 +109,10 @@ if car_electric:
 else:
     car_engine = f"{car_engine_hp}HP {car_engine_displacement}L {car_engine_cylinders} Cylinder Engine"
 
-transmission_gears = ['–', '1', '2', '4', '5', '6', '7', '8', '9', '10']
+transmission_gears = ['-', '1', '2', '4', '5', '6', '7', '8', '9', '10']
 car_transmission_gears = st.selectbox("Select the number of gears the car's transmission has. (ex. A 6-Speed transmission has 6 gears)", options=transmission_gears)
 
-transmission_type = ['–', 'Automatic', 'Manual','CVT', 'DCT']
+transmission_type = ['-', 'Automatic', 'Manual','CVT', 'DCT']
 car_transmission_type = st.selectbox("Select the transmission type of the car.", options=transmission_type)
 
 # Get transmission string to tokenize
@@ -181,7 +180,7 @@ if st.button("Register Car"):
             car_clean_title_value,
             int(car_price),
             True,
-            carJson['image'],
+            carJson['image']
         ),   
         car_uri
     ).transact({'from': address, 'gas': 1000000})
