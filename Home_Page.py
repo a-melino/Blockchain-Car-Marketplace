@@ -5,6 +5,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import streamlit as st
 from pinata import pin_file_to_ipfs, pin_json_to_ipfs, convert_data_to_json
+from PIL import Image
 
 
 # Load environment variables
@@ -27,6 +28,11 @@ contract = load_contract()
 
 # Main Streamlit UI
 st.title("Welome to the Blockchain Car Marketplace!")
+
+image = Image.open('images/carhomepage.jpg')
+
+st.image(image)
+
 st.write("Choose an action on the left to get started")
 
 

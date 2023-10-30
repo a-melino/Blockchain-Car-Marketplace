@@ -45,12 +45,12 @@ def predict_price(car_data):
     if car_data["electric"] == "Yes":
         predict_df["electric"] = 1
     else:
-        if car_data['fuel_type'] == "–":
+        if car_data['fuel_type'] == "-":
             pass
         else:
             predict_df["fuel_type_" + car_data["fuel_type"]] = 1
         
-        if car_data['engine_cylinders'] == "–":
+        if car_data['engine_cylinders'] == "-":
             pass
         else:
             predict_df["engine_cylinders_" + car_data["engine_cylinders"]] = 1
@@ -73,12 +73,12 @@ def predict_price(car_data):
     else:
         pass
 
-    if car_data['transmission_gears'] == "–":
+    if car_data['transmission_gears'] == "-":
         pass
     else:
         predict_df["transmission_gears_" + car_data["transmission_gears"]] = 1
 
-    if car_data['transmission_type'] == "–":
+    if car_data['transmission_type'] == "-":
         pass
     else:
         predict_df["transmission_type_" + car_data["transmission_type"]] = 1
