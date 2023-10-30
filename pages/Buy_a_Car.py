@@ -58,6 +58,7 @@ if st.button("Buy Car"):
 
     # Handle the receipt to check if the listing process was successful
     if receipt.status == 1:
-        st.write("Car purchsed successfully.")
+        st.success("Car purchsed successfully.")
+        st.write(dict(receipt))
     else:
         st.write("Failed to purchase the car.")
